@@ -1,0 +1,131 @@
+{
+	"name": "vscodex",
+	"publisher": "murapa96",
+	"displayName": "VSCODEX",
+	"description": "An Openai Codex support extension based on Openai's Playground.",
+	"version": "1.0.1",
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vscodex.generateFromOpenAi",
+				"title": "Generate code"
+			},
+			{
+				"command": "vscodex.setOpenaiKey",
+				"title": "Set OpenaiKey"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorFocus",
+					"command": "vscodex.generateFromOpenAi",
+					"group": "codexgroup"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "vscodex.generateFromOpenAi",
+				"key": "F4",
+				"mac": "F4",
+				"when": "editorTextFocus"
+			}
+		],
+		"configuration": {
+			"title": "VSCodex",
+			"properties": {
+				"vscodex.openaiKey": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "OpenAiKey"
+				},
+				"vscodex.editEngineConfig": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "The last engine options"
+				},
+				"vscodex.insertEngineConfig": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "The last engine options"
+				},
+				"vscodex.generateEngineConfig": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "The last engine options"
+				},
+				"default": {
+					"vscodex.openaiKey": "",
+					"vscodex.generateEngineConfig": "",
+					"vscodex.insertEngineConfig": "",
+					"vscodex.editEngineConfig": ""
+
+
+				}
+			}
+		},
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "vscodex-activitybar",
+                    "title": "Codex Config",
+                    "icon": "media/robot-icon.svg"
+                }
+            ]
+        },
+		"views": {
+
+			"vscodex-activitybar": [
+				{
+					"type": "webview",
+					"id": "vscodex.configView",
+					"name": "Codex config"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.59.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.1"
+	}
+}

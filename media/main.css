@@ -1,0 +1,223 @@
+body {
+  background-color: var(--vscode-sidebar-background);
+}
+/*********** ITEM CSS ***************/
+
+.item {
+  padding: 0px;
+  width: 100%;
+  float: left;
+  margin: 0% !important;
+}
+
+.item-top-tab-button {
+  width: 100%;
+  font-size: 90%;
+  float: left;
+  padding-top: 0.2em;
+  margin: 0% !important;
+  background-color: var(--vscode-activityBar-background);
+  color: var(--vscode-activityBar-foreground);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.item-top-tab-button-icon {
+  /*We need to make the <svg> tag smaller*/
+  width: 0.5em;
+  height: 0.5em;
+  color: var(--vscode-foreground);
+}
+.item-top-tab-button-icon:hover {
+  color: var(--vscode-sidebar-foreground);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.item-input {
+  padding: 0.4em;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  width: 100%;
+  font-size: 100%;
+  border: 1px solid var(--vscode-input-border);
+}
+
+.item-input:active {
+  background-color: var(--vscode-input-activeBackground) !important;
+  color: var(--vscode-input-activeForeground) !important;
+  border: 1px solid var(--vscode-input-activeBorder) !important;
+}
+
+.item-input-number {
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  margin-top:0.6em;
+  height:1.5em;
+}
+
+.item-input-number:active {
+  background-color: var(--vscode-input-activeBackground) !important;
+  color: var(--vscode-input-activeForeground) !important;
+  border: 1px solid var(--vscode-input-activeBorder) !important;
+}
+
+.item-textarea {
+  padding: 2px;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  width: 100%;
+  height: 8em;
+  padding: 0 5px;
+  font-size: 100%;
+  border: 1px solid var(--vscode-input-border);
+  resize: none;
+}
+
+.item-textarea:active {
+  background-color: var(--vscode-input-activeBackground) !important;
+  color: var(--vscode-input-activeForeground) !important;
+  border: 1px solid var(--vscode-input-activeBorder) !important;
+}
+
+.title {
+  text-align: center;
+}
+
+.item-title {
+  text-align: left;
+  margin-bottom: 0.35em !important;
+  font-size: 105%;
+}
+
+.item-sub {
+  text-align: left;
+  margin-top: 0.6em !important;
+  font-size: 90%;
+  color: var(--vscode-sidebar-foreground);
+  margin-bottom: 0%;
+}
+.item-select {
+  width: 80%;
+  float: left;
+  font-size: 100%;
+  border-color: var(--vscode-foreground);
+  background-color: var(--vscode-selection-background);
+  color: var(--vscode-foreground) !important;
+  border: 1px solid var(--vscode-foreground);
+  border-radius: 0px;
+  height:2em;
+
+}
+.item-select-option {
+  width: 100%;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 100%;
+  background-color: var(--vscode-dropdown-background);
+  color: var(--vscode-dropdown-foreground);
+  border-color: var(--vscode-dropdown-border);
+  height:2em !important;
+}
+
+.item-button {
+  width: 100%;
+  margin-left: 4%;
+  margin-right: 6%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  float: left;
+  padding: 7px;
+  font-size: 110%;
+  border-color: var(--vscode-foreground);
+  background-color: var(--vscode-selection-background);
+  color: var(--vscode-foreground) !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-100 {
+  width: 100%;
+  float: left;
+}
+
+/************ SLIDER CSS ************/
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.2em;
+  border-radius: 5px;
+  background: var(--vscode-activityBar-background);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--vscode-foreground);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: background-color 0.2s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--vscode-textLink-foreground);
+  cursor: pointer;
+}
+
+/************** TOPNAV BAR **************/
+.topnav {
+  overflow: hidden;
+  background-color: var(--vscode-activityBar-background);
+  border-bottom: 1px solid var(--vscode-activityBar-background);
+}
+
+.item-top-tab-button {
+  width: 33%;
+  font-size: 90%;
+  float: left;
+  margin: 0% !important;
+  background-color: var(--vscode-activityBar-background);
+  color: var(--vscode-activityBar-inactiveForeground);
+  /* Remove borders */
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: color 0.2s;
+}
+
+.item-top-tab-button:hover {
+  background-color: var(--vscode-activityBar-activeBackground) !important;
+  color: var(--vscode-activityBar-activeForeground) !important;
+}
+.item-top-tab-button:disabled {
+  background-color: var(--vscode-activityBar-activeBackground) !important;
+  color: var(--vscode-activityBar-activeForeground) !important;
+  border-bottom: 2px solid var(--vscode-activityBar-activeBorder) !important;
+}
+.item-top-tab-button-icon {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+  margin: 0% !important;
+  font-size: 2rem;
+}
