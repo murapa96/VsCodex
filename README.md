@@ -7,8 +7,9 @@
 3. Enjoy your new code. (Optional)
 
 <!-- Add demo .mp4 docimgs/demo.mp4-->
-![Generate](docimgs/demo.mp4)
-
+<video width="320" height="240" controls>
+  <source src="docimgs/demo.mp4" type="video/mp4">
+</video>
 ## Modes
 
 Codex can be used in three differents modes, each mode have its own set of options that you can find on a new tab on the Activity Bar. You can use the extension without selecting any code, in that case the extension will generate new code using the default prompt.
