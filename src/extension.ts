@@ -41,7 +41,7 @@ async function generate() {
       {
         location: vscode.ProgressLocation.Notification,
         title: "Generating code...",
-        cancellable: true,
+        cancellable: false,
       },
       () => {
         var start = new vscode.Position(sel.start.line, sel.start.character);
