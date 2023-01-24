@@ -1,10 +1,12 @@
 # VsCodex - A VsCode extension that add the capabilities of OpenAI Playground.
 
 ## How to use
-
-1. Select some code. (Optional)
-2. Press F4. (Optional)
-3. Enjoy your new code. (Optional)
+1. Press ctrl+shift+p.
+1. Write "Set openaikey".
+1. Paste your OpenAi API Key.
+1. Select some code.
+1. Press F4.
+1. Enjoy your new code.
 
 ![Demo](docimgs/demo.gif)
 
