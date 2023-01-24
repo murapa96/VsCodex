@@ -24,8 +24,7 @@ Transforms the selection with a set of instructions provided.
 
 ### Insert
 
-Insert new code using the [insert] tag. If no selection is made, the extension will use the default prompt.
-
+Insert new code using the [insert] tag. Your selection will be splited between [insert] and the code will overwrite the tag.
 ## How to install
 
 1. Download the latest release.
