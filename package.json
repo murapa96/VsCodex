@@ -3,6 +3,10 @@
 	"publisher": "murapa96",
 	"displayName": "VSCODEX",
 	"description": "An Openai Codex support extension based on Openai's Playground.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/murapa96/VsCodex"
+	},
 	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.59.0"
@@ -78,22 +82,19 @@
 					"vscodex.generateEngineConfig": "",
 					"vscodex.insertEngineConfig": "",
 					"vscodex.editEngineConfig": ""
-
-
 				}
 			}
 		},
-        "viewsContainers": {
-            "activitybar": [
-                {
-                    "id": "vscodex-activitybar",
-                    "title": "Codex Config",
-                    "icon": "media/robot-icon.svg"
-                }
-            ]
-        },
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "vscodex-activitybar",
+					"title": "Codex Config",
+					"icon": "media/robot-icon.svg"
+				}
+			]
+		},
 		"views": {
-
 			"vscodex-activitybar": [
 				{
 					"type": "webview",
@@ -122,7 +123,7 @@
 		"eslint": "^7.27.0",
 		"glob": "^7.1.7",
 		"mocha": "^8.4.0",
-		"typescript": "^4.3.2",
+		"typescript": "^4.9.4",
 		"vscode-test": "^1.5.2"
 	},
 	"dependencies": {

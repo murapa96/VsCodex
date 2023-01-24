@@ -80,7 +80,7 @@ async function generate() {
             },
             (err) => {
               //console.log("Error " + err.message);
-            }   
+            }
           );
       }
     );
