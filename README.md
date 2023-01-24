@@ -8,7 +8,7 @@
 
 <!-- Add demo .mp4 docimgs/demo.mp4-->
 <video width="320" height="240" controls>
-  <source src="docimgs/demo.mp4" type="video/mp4">
+  <source src="https://github.com/murapa96/VsCodex/blob/main/docimgs/demo.mp4?raw=true" type="video/mp4">
 </video>
 
 ## Modes
