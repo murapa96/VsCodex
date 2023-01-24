@@ -6,7 +6,7 @@
 2. Press F4. (Optional)
 3. Enjoy your new code. (Optional)
 
-![Demo]("https://github.com/murapa96/VsCodex/blob/main/docimgs/demo.gif?raw=true")
+![Demo]("docimgs/demo.gif")
 
 ## Modes
 
