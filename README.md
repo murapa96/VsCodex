@@ -6,7 +6,7 @@
 2. Press F4. (Optional)
 3. Enjoy your new code. (Optional)
 
-![Demo]("docimgs/demo.gif")
+![Demo](docimgs/demo.mp4)
 
 ## Modes
 
