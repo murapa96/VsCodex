@@ -6,10 +6,7 @@
 2. Press F4. (Optional)
 3. Enjoy your new code. (Optional)
 
-<!-- Add demo .mp4 docimgs/demo.mp4-->
-<video width="320" height="240" controls>
-  <source src="https://github.com/murapa96/VsCodex/blob/main/docimgs/demo.mp4?raw=true" type="video/mp4">
-</video>
+![Demo]("https://github.com/murapa96/VsCodex/blob/main/docimgs/demo.gif")
 
 ## Modes
 
