@@ -1,5 +1,7 @@
 # VsCodex - A VsCode extension that add the capabilities of OpenAI Playground.
 
+# POR MOTIVO DEL CESE DE LOS MODELOS CODEX, ESTA EXTENSIÓN YA NO FUNCIONA.
+
 ## How to use
 1. Press ctrl+shift+p.
 1. Write "Set openaikey".
